@@ -21,6 +21,6 @@ fn main() {
         baz: 2000,
     };
 
-    ptr_to_struct(&a);
-    ptr_to_struct_2(&a as *const _ as usize);
+    ptr_to_struc(&a);
+    ptr_to_struct_(&a as *const _ as usize);
 }
