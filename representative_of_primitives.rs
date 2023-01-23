@@ -22,7 +22,7 @@ fn as_bytes<T>(o: &T) -> &[u8] {
    
 fn main(){    
     println!("{:?}", as_bytes(&1i8));
-    println!("{:?}", as_bytes(&2i16));
+    println!("{:?}", as_bytes(&2129i16));
     println!("{:?}", as_bytes(&3i32));
     println!("{:?}", as_bytes(&(4i64 + 5 * 256 + 6 * 256 * 256)));
     println!("{:?}", as_bytes(&'A'));
