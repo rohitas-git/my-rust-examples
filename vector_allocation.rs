@@ -2,7 +2,7 @@
 // 1. Fixed size header -- Stack allocated
 // 2. Variable length buffer -- Heap allocated
 
-// Vec obj stores 3 sub-ojects
+// Vec obj stores 3 sub-ojects in its header
 // 1. pointer-to heap-allocated buffer
 // 2. capacity of such buffer as number of items, which is a usize nubmber
 // 3. length of vector as number of items in-store <= capacity
@@ -10,6 +10,9 @@
 // Therefore, Header = 
 // 3 * 8 -> 24 bytes in any 64-bit system
 // 3 * 4 -> 12 bytes in any 32-bit system
+
+// After length exceeds capacity, vector needs to deallocate current buffer and allocate & copy into a new buffer
+// with more capacity 
 
 fn len_vs_capacity(){
     println!("Compare Len vs Capacity");

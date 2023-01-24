@@ -11,8 +11,8 @@ fn recursive_func(n: usize) {
     if n > 1 { recursive_func(n - 1) }
 }
 
-// turns that if Stack_limit = 8.3*10^6 , Heap_Limit= 3980.7*10^6
-// Heap = 480 * Stack
+// turns out that if Stack_limit = 8.3*10^6 , Heap_Limit= 3980.7*10^6
+// Heap_Size = 480 * Stack_Size
 fn main(){
     recursive_func(N_ARRAY);
 }

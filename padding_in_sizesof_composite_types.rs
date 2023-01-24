@@ -7,9 +7,10 @@
 //
 // Padding: Unused space created due to alignment requirements 
 
+use std::mem::*;
+
 enum E1 { E1a, E1b }
 enum E2 { E2a, E2b(f64) }
-use std::mem::*;
 
 fn main(){
 

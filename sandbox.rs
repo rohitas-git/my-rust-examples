@@ -1,3 +1,6 @@
+// Get memory location of variables
+//? How is it done? Didn't understand the code
+
 fn main(){
     let b1 = true;
     let b2 = 6i16;
