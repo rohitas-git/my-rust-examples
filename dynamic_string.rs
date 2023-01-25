@@ -177,3 +177,17 @@ fn implicit_conv_ref_string(){
     print!("{} {}", w1, w2);
     This will print: "bye bye".
 }
+
+//-------------------------------------------------//
+
+/*
+
+    Please check out the reference about them, and here are some general rules we can follow:
+
+    Stick to String and &str for Unicode text.
+    When working with filenames, use std::path::PathBuf and &Path instead.
+    When working with binary data that isn’t UTF-8 encoded at all, use Vec<u8> and &[u8] instead.
+    When working with environment variable names and command-line arguments in the native form presented by the operating system, use OsString and &OsStr.
+    When interoperating with C libraries that use null-terminated strings, use std::ffi::CString and &CStr.
+
+*/

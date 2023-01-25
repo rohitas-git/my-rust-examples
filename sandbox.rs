@@ -2,12 +2,9 @@
 //? How is it done? Didn't understand the code
 
 fn main(){
-    let b1 = true;
-    let b2 = 6i16;
-    let b3 = 16f64;
-    print!("(Virtual) Memory location of\n b1:{}\n b2:{}\n b3:{}\n",
-        &b1 as *const bool as usize,
-        &b2 as *const i16 as usize,
-        &b3 as *const f64 as usize
-    );
+    // let arr=[23, 17, 12, 16, 15, 2]; 
+    // println!("{:?}", arr[2..5]); // * size of arr[2..5] unknown at compile time
+
+    let arr = [23, 17, 12, 16, 15, 2];
+    println!("{:?}", &arr[2..4]);
 }

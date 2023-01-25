@@ -1,3 +1,7 @@
+fn main(){
+    six_ways_of_closure();
+}
+
 
 /// Closure:
 /// 
@@ -25,7 +29,5 @@ fn six_ways_of_closure(){
     );
 }
 
-fn main(){
-    six_ways_of_closure();
-}
+
 

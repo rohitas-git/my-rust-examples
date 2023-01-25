@@ -1,10 +1,17 @@
+fn main(){
+    // illegal_str();
+    static_string_ex();
+    abnormal_str_ref_header();
+}
+
 ///! Static Strings:
 /// String objects can be changed to refer to other string content
 /// But they have immutable content, i.e
-///! it is not possible to overwrite some characters or add or remove characters 
+/// * it is not possible to overwrite some characters or add or remove characters 
 ///
 ///! &str (string literal):
-/// str is defined as the type of unmodifiable array of bytes representing a UTF-8 String
+/// * str is defined as the type of unmodifiable undefined-length sequence of bytes representing a UTF-8 String
+/// 
 /// Each time the compiler parses a literal string,
 /// it stores in a static program area the characters of that string, and such area is of str
 /// type. Then the compiler uses a reference to such area as the value of such literal string
@@ -51,7 +58,7 @@ fn static_string_ex(){
 /// 
 /// Such variables result in sizes that are twice as large as that of a normal 
 /// reference, as they contain a pointer object and a usize object
-fn abnormal_str_ref(){
+fn abnormal_str_ref_header(){
     use std::mem::*;
     let a: &str = "";
     let b: &str = "0123456789";
@@ -66,8 +73,4 @@ fn abnormal_str_ref(){
     size_of_val(&&c));
 }
 
-fn main(){
-    // illegal_str();
-    static_string_ex();
-    abnormal_str_ref();
-}
+// * https://coderscat.com/rust-string-or-str/
