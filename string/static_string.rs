@@ -13,8 +13,8 @@ fn main(){
 /// * str is defined as the type of unmodifiable undefined-length sequence of bytes representing a UTF-8 String
 /// 
 /// Each time the compiler parses a literal string,
-/// it stores in a static program area the characters of that string, and such area is of str
-/// type. Then the compiler uses a reference to such area as the value of such literal string
+/// it stores in a static program area the characters of that string, and such area is of str type. 
+/// * Then the compiler uses a reference to such area as the value of such literal string
 /// expression, and so any string literal is of type &str.
 /// 
 fn static_string_ex(){

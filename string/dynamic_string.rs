@@ -15,16 +15,16 @@ fn main(){
 ///! Dynamic String:
 /// 
 /// any Rust dynamic string, like any Rust static string,
-///! contains an array of bytes that represent a UTF-8 string; 
+/// * contains an array of bytes that represent a UTF-8 string; 
 /// it does not contain an array of characters.
 /// 
 ///! Similarities:
 /// 
-/// While static string buffers are similar to arrays, that is, 
-/// the str type is similar to the generic [u8; N] type, 
+/// -n While static string buffers are similar to arrays, that is, 
+/// -n the str type is similar to the generic [u8; N] type, 
 /// 
-/// dynamic strings are similar to vectors of bytes, that is, 
-/// the String type is similar to the Vec<u8> type.
+/// -n dynamic strings are similar to vectors of bytes, that is, 
+/// -n the String type is similar to the Vec<u8> type.
 /// 
 fn dynamic_string(){
     // let mut a: String = "He".to_string();
@@ -43,7 +43,7 @@ fn dynamic_string(){
 
 ///! Structure of dynamic string
 ///  
-/// In addition, both dynamic strings and vectors have the same implementation. 
+/// -b In addition, both dynamic strings and vectors have the same implementation. 
 /// 
 /// Both are structures consisting of three fields:
 /// 
@@ -51,7 +51,7 @@ fn dynamic_string(){
 /// -Capacity:  the number of items that may be contained in the allocated buffer;
 /// -Length:    the number of items presently used in the allocated buffer.
 /// 
-/// However, notice that for the strings, such “items” are bytes, not characters:
+/// * However, notice that for the strings, such “items” are bytes, not characters:
 /// 
 fn string_structure(){
     let mut s = "".to_string();

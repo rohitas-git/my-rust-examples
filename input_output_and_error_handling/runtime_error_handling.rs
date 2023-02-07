@@ -8,10 +8,10 @@ fn main(){
 /// 
 /// * Robust Error Handling:
 /// 
-/// Every function that contains an invocation to a fallible function 
-/// should be a fallible function -> every invocation of a fallible function should be followed by a question mark to propagate the error condition.
-/// or should handle the "Result" value in a "match" statement, 
-/// or similar handling.
+/// * Every function that contains an invocation to a fallible function :
+/// 1. should be a fallible function       --> every invocation of a fallible function should be followed by a question mark to propagate the error condition.
+/// OR
+/// 2. should handle the "Result" value in a "match" statement, or similar handling.
 /// 
 
 
@@ -33,11 +33,11 @@ pub mod error_handling{
     /// "match e { Ok(v) => v, _ => return e }". 
     /// 
     /// In other words, 
-    /// * such macro examines if its argument is "Some" or "Ok", and in such case unwraps it, 
+    /// * ? macro examines if its argument is "Some" or "Ok", and in such case unwraps it, 
     /// * or otherwise returns it as a return value of the containing function.
     /// 
-    /// It can be applied only to expressions of type "Result<T,E>" or "Option<T>", 
-    /// and, of course, if can be used only inside a function with a proper return value type. 
+    /// * It can be applied only to expressions of type "Result<T,E>" or "Option<T>", 
+    /// * and, of course, if can be used only inside a function with a proper return value type. 
     /// 
     /// If the enclosing function return value type is "Result<T1,E>", 
     /// the question mark macro can be applied only to an expression of "Result<T2,E>" type, 
