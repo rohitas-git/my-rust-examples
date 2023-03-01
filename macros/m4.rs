@@ -71,7 +71,7 @@ macro_rules! recurrence{
                 }
             }
 
-            Recurrence { mem: [0, 1], pos: 0 }
+            Recurrence { mem: [$($init),+], pos: 0 }
         }
     };    
 }
