@@ -7,6 +7,15 @@
 // Thus, the first two numbers in the sequence are 0 and 1, 
 // with the third being F0 + F1 = 0 + 1 = 1, the fourth F1 + F2 = 1 + 1 = 2, and so on forever.
 
+// And it includes the separators available for various fragment specifiers:
+
+// expr and stmt may only be followed by one of: =>, ,, or ;.
+// pat_param may only be followed by one of: =>, ,, =, |, if, or in.
+// pat may only be followed by one of: =>, ,, =, if, or in.
+// path and ty may only be followed by one of: =>, ,, =, |, ;, :, >, >>, [, {, as, where, or a macro variable of block fragment specifier.
+// vis may only be followed by one of: ,, an identifier other than a non-raw priv, any token that can begin a type, or a metavariable with a ident, ty, or path fragment specifier.
+// All other fragment specifiers have no restrictions.
+
 macro_rules! count_exprs {
     () => (0);
     ($head:expr) => (1);
@@ -14,7 +23,7 @@ macro_rules! count_exprs {
 }
 
 macro_rules! recurrence{
-    ( a[n]: $sty:ty = $($inits:expr),+ ) => 
+    ( $seq:ident [ $ind:ident ]: $sty:ty = $($inits:expr),+ => $recur:expr  ) => 
     { 
         {
 
@@ -59,9 +68,11 @@ macro_rules! recurrence{
                         Some(next_val)
                     } else {
                         let next_val = {
-                            let n = self.pos;
-                            let a = IndexOffset { slice: &self.mem, offset: n };
-                            a[n-1] + a[n-2]
+                            // let n = self.pos; 
+                            let $ind = self.pos;
+                            let $seq = IndexOffset { slice: &self.mem, offset: $ind };
+                            // a[n-1] + a[n-2]
+                            $recur
                         };
 
                         {
@@ -86,8 +97,9 @@ macro_rules! recurrence{
 
 fn main(){
 
-    let fib = recurrence![a[n]: f32 = 0.0, 1.0 ];
-    
+    // let fib = recurrence![a[n]: f32 = 0.0, 1.0 ];
+    let fib = recurrence![a[n]: u64 = 0, 1 => a[n-1] + a[n-2]];
+
     for e in fib.take(20) { println!("{}", e) }
 
 }

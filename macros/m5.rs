@@ -5,7 +5,7 @@
 // As such, the compiler treats them as completely different identifiers, 
 // even though they have the same lexical appearance.
 
-#[cfg(feature="error")]
+#[cfg(feature="unhygenic")]
 pub mod error{
     #[macro_export]
     macro_rules! using_a{
@@ -18,7 +18,7 @@ pub mod error{
     }
 }
 
-#[cfg(feature="work")]
+#[cfg(feature="hygenic")]
 pub mod works;
 mod works{
     #[macro_export]
