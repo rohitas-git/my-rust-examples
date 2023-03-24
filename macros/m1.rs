@@ -4,7 +4,7 @@
 /// () => {}  === Matcher & Transcriber
 /// ($NAME: DESIGNATOR)
 /// 
-/// Here’s a quick list of the designators available in Rust:
+/// *Here’s a quick list of the designators available in Rust:
 // item: an item, such as a function, a struct, a module, etc.
 // block: a block (i.e. a block of statements and/or an expression, surrounded by braces)
 // stmt: a statement

@@ -30,4 +30,4 @@ fn main(){
     println!("{:?}", as_bytes(&&1i8));
 }
 
-//! Would be better to have assert_eq! tests
+// * Would be better to have assert_eq! tests
