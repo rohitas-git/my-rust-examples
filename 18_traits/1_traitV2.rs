@@ -300,8 +300,8 @@ mod DisambiguateAssociatedFunction{
 
 mod GenericTrait{
     // two possible ways to implement a generic trait: 
-    // to keep it generic
-    // to concretize it 
+    // -to keep it generic
+    // -to concretize it 
 
     mod Abstract{
         trait A<Key,Count>{
