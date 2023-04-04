@@ -72,7 +72,8 @@ pub fn some_name(input: TokenStream) -> TokenStream {
 // The second is the body of the item the attribute is attached to: in this case, fn index() {} and the rest of the function’s body.
 
 // Other than that, attribute-like macros work the same way as custom derive macros: 
-// *you create a crate with the proc-macro crate type and implement a function that generates the code you want! 
+// *you create a crate with the proc-macro crate type and 
+// *implement a function that generates the code you want! 
 
 /* -------------------------------------------------------------------------- */
 /*                          Info Function-like Macros                         */
