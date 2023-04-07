@@ -196,6 +196,10 @@ mod DST{
         // Every trait is a dynamically sized type we can refer to by using the name of the trait.
     }
 }
+
+/* -------------------------------------------------------------------------- */
+/*                              Sized Trait Bound                             */
+/* -------------------------------------------------------------------------- */
 mod Sized{
     // *To work with DSTs, Rust provides the Sized trait to determine whether or not a type’s size is known at compile time. 
     // This trait is automatically implemented for everything whose size is known at compile time. 
