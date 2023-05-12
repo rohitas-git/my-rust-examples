@@ -1,0 +1,40 @@
+total 9.1M
+4.0K drwxrwxr-x 33 user user 4.0K May 12 17:23 .
+4.0K drwxrwxr-x 17 user user 4.0K May  9 15:38 ..
+4.0K drwxrwxr-x  2 user user 4.0K Apr  4 17:30 18_traits
+4.0K drwxrwxr-x  2 user user 4.0K Mar 27 17:29 19_oop
+ 36K -rw-rw-r--  1 user user  36K Mar 22 16:43 1_nsseCPfsyK_WzrvvovHUzw.webp
+4.0K drwxrwxr-x  2 user user 4.0K Apr  7 15:07 1_primtitives
+4.0K drwxrwxr-x  2 user user 4.0K Mar 24 12:23 20_std_collection
+4.0K drwxrwxr-x  2 user user 4.0K Apr  7 15:33 2_custom_types
+4.0K drwxrwxr-x  2 user user 4.0K Apr  7 11:16 advanced_features
+5.0M -rw-rw-r--  1 user user 5.0M Mar  2 15:04 Carlo Milanesi - Beginning Rust_ From Novice to Professional-Apress (2018).pdf
+4.0K drwxrwxr-x  2 user user 4.0K Feb  9 09:04 closure
+4.0K drwxrwxr-x  2 user user 4.0K Apr 18 18:27 collection
+4.0K drwxrwxr-x  2 user user 4.0K Apr  7 11:16 crate
+4.0K drwxrwxr-x  2 user user 4.0K Mar 27 17:29 dispatch
+   0 -rw-rw-r--  1 user user    0 May 12 17:23 du
+4.0K drwxrwxr-x  2 user user 4.0K Mar 22 16:43 enum
+4.0K drwxrwxr-x  3 user user 4.0K Mar  2 11:59 feature
+4.0K drwxrwxr-x  2 user user 4.0K Mar 22 16:43 functions
+4.0K drwxrwxr-x  2 user user 4.0K Mar 28 12:40 generics
+4.0K drwxrwxr-x  8 user user 4.0K May 12 17:19 .git
+4.0K drwxrwxr-x  2 user user 4.0K Apr  7 12:48 input_output_and_error_handling
+4.0K drwxrwxr-x  2 user user 4.0K Feb  9 09:04 iterator
+4.0K drwxrwxr-x  4 user user 4.0K Mar 28 12:40 macros
+4.0K drwxrwxr-x  2 user user 4.0K Mar 27 17:29 memory
+4.0K drwxrwxr-x  2 user user 4.0K Mar 27 17:29 module_system
+4.0K drwxrwxr-x  2 user user 4.0K Mar 27 17:29 others
+4.0K drwxrwxr-x  2 user user 4.0K Mar  2 14:48 paths
+4.0K drwxrwxr-x  2 user user 4.0K Apr 18 17:35 pointer
+4.0K drwxrwxr-x  3 user user 4.0K Mar 27 15:21 primer
+4.0K drwxrwxr-x  3 user user 4.0K Apr  7 12:57 problems
+4.0K drwxrwxr-x  4 user user 4.0K Mar  3 17:35 projects
+4.0K -rwxrwxr-x  1 user user   41 Dec 27 18:38 rs.sh
+4.0M -rwxrwxr-x  1 user user 4.0M Apr 12 15:05 sandbox
+4.0K -rw-rw-r--  1 user user  162 Apr 12 15:05 sandbox.rs
+4.0K drwxrwxr-x  2 user user 4.0K Feb  9 09:04 slices
+4.0K drwxrwxr-x  2 user user 4.0K Feb 23 10:01 string
+4.0K drwxrwxr-x  2 user user 4.0K Mar 22 16:43 structure
+4.0K drwxrwxr-x  2 user user 4.0K May 12 17:21 unsafe
+4.0K drwxrwxr-x  2 user user 4.0K Feb  9 09:04 vector

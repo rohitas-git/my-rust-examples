@@ -1,0 +1,1 @@
+/home/user/dev/rust/rust-examples/macros/procedural/derive/pancakes/target/debug/pancakes: /home/user/dev/rust/rust-examples/macros/procedural/derive/hello_macro/hello_macro_derive/src/lib.rs /home/user/dev/rust/rust-examples/macros/procedural/derive/hello_macro/src/lib.rs /home/user/dev/rust/rust-examples/macros/procedural/derive/pancakes/src/main.rs
